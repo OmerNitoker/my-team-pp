@@ -1,0 +1,60 @@
+.home-stories {
+    background-color: $clr1;
+}
+
+.stories-container {
+    max-width: 77%;
+    text-align: center;
+    // max-height: 62%;
+    margin-block: 50px;
+    gap: 2em;
+
+    & h1 {
+        color: $clr6;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: 'Livvic', sans-serif;
+        margin: 0 auto;
+
+        & span {
+            color: $clr4;
+        }
+    }
+}
+
+.stories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Livvic', sans-serif;
+    max-height: 20%;
+
+    & p {
+        color: $clr6;
+        font-size: 15px;
+        // font-weight: bolder;
+        
+    }
+
+    & h5 {
+        color: $clr4;
+        font-weight: bold;
+    }
+
+    &.first-story {
+        grid-column: 1;
+    }
+
+    &.second-story {
+        grid-column: 2;
+    }
+
+    &.third-story {
+        grid-column: 3;
+    }
+}
+
+.avatar-img {
+    height: 3rem;
+    border-radius: 50%;
+    border: solid 2px $clr9;
+}
